@@ -1,0 +1,6 @@
+*.json
+*.csv
+.env
+.ipynb_checkpoints/
+.numbers
+.DS_Store
