@@ -1,7 +1,7 @@
-"""日本の月別気候データ weather_jp を作る。"""
+"""気象庁の観測地点データを読み込む。"""
 import pandas as pd
 
 
-def load_weather_jp(path="sunshine-atlas-monthly-climate.csv"):
-    weather = pd.read_csv(path)
-    return weather[weather["country_code"] == "JP"]
+def load_weather_station(path="jma_station_active.csv"):
+    """現在稼働中の観測地点一覧(観測項目のフラグ付き)。"""
+    return pd.read_csv(path)
